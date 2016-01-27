@@ -19,7 +19,7 @@
 
 ## Usage
 
-Refer to the [example application](https://github.com/llambda/session-rethinkdb/blob/master/example.js).
+Refer to the [example application](https://github.com/llambda/session-rethinkdb/blob/v1.0/example.js).
 
 [npm-version-image]: https://img.shields.io/npm/v/session-rethinkdb.svg
 [npm-downloads-image]: https://img.shields.io/npm/dm/session-rethinkdb.svg
