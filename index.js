@@ -19,8 +19,8 @@ module.exports = function (connect) {
 		self.options.browserSessionsMaxAge = self.options.browserSessionsMaxAge || 86400000; // 1 day
 
 		Store.call(self, self.options); // Inherit from Store
-
-		self.r.tableCreate(self.options.table)
+		
+		self.r.branch(r.tableList().contains(self.options.table).not(), r.tableCreate(self.options.table), '')
 		.run()
 		.catch(function (error) {
 			if (!error.message.indexOf('already exists') > 0) {
